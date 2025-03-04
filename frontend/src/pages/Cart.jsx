@@ -28,7 +28,7 @@ const Cart = () => {
   return (
     <div className="border-t border-gray-200 pt-14 ">
       <div>
-        <Title text1={"YOUR"} text2={"CART"} />
+        <Title text1={"TU"} text2={"CARRITO"} />
       </div>
       <div>
         {cartData.map((item, index) => {
@@ -91,7 +91,7 @@ const Cart = () => {
           <CartTotal />
           <div className="w-full text-end ">
             <button onClick={()=> navigate('/place-order') } className="bg-black text-white text-sm my-8 px-8 py-3 cursor-pointer ">
-              PROCEED TO CHECKOUT
+            PASAR POR CAJA
             </button>
           </div>
         </div>

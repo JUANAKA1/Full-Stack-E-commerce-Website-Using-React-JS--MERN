@@ -13,58 +13,58 @@ const PlaceOrder = () => {
       {/* left side */}
       <div className="flex flex-col gap-4 w-full sm:max-w-[480px] ">
         <div className="text-xl sm:text-2xl my-3 ">
-          <Title text1={"DELIVERY"} text2={"INFORMATION"} />
+          <Title text1={"INFORMACIÓN"} text2={"DE ENTREGA"} />
         </div>
         <div className="flex gap-3 ">
           <input
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
             type="text"
-            placeholder="First name"
+            placeholder="Nombre"
           />
           <input
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
             type="text"
-            placeholder="Last name"
+            placeholder="Apellido"
           />
         </div>
         <input
           className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
           type="text"
-          placeholder="Email address"
+          placeholder="Correo Electrónico"
         />
         <input
           className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
           type="text"
-          placeholder="Street"
+          placeholder="Dirección"
         />
         <div className="flex gap-3 ">
           <input
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
             type="text"
-            placeholder="City"
+            placeholder="Ciudad"
           />
           <input
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
             type="text"
-            placeholder="State"
+            placeholder="Departamento"
           />
         </div>
         <div className="flex gap-3 ">
           <input
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
             type="number"
-            placeholder="Zipcode"
+            placeholder="Código Postal"
           />
           <input
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
             type="text"
-            placeholder="Country"
+            placeholder="País"
           />
         </div>
         <input
           className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
           type="number"
-          placeholder="Phone"
+          placeholder="Teléfono"
         />
       </div>
       {/* right Side */}
@@ -73,7 +73,7 @@ const PlaceOrder = () => {
           <CartTotal />
         </div>
         <div className="mt-12">
-          <Title text1={"PAYMENT"} text2={"METHOD"} />
+          <Title text1={"FORMA"} text2={"DE PAGO"} />
           {/* payment method Selection */}
           <div className="flex gap-3 flex-col lg:flex-row">
             <div
@@ -108,7 +108,7 @@ const PlaceOrder = () => {
                 } `}
               ></p>
               <p className="text-gray-500 text-sm font-medium mx-4 ">
-                CASH ON DELIVER
+                PAGO CONTRA ENTREGA
               </p>
             </div>
           </div>
@@ -117,7 +117,7 @@ const PlaceOrder = () => {
               onClick={() => navigate("/orders")}
               className="bg-black text-white px-16 py-3 text-sm cursor-pointer "
             >
-              PLACE ORDER
+              CONFIRMAR PEDIDO
             </button>
           </div>
         </div>

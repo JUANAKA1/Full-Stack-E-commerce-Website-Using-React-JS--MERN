@@ -24,7 +24,7 @@ const SearchBar = () => {
         <input
           className=" flex-1 outline-none bg-inherit text-sm"
           type="text"
-          placeholder="Search..."
+          placeholder="Buscar..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />

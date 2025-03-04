@@ -17,37 +17,37 @@ const Login = () => {
         <input
           className="w-full px-3 py-2 border border-gray-800"
           type="text"
-          placeholder="Name"
+          placeholder="Nombre"
           required
         />
       )}
       <input
         className="w-full px-3 py-2 border border-gray-800"
         type="email"
-        placeholder="Email"
+        placeholder="Correo Electrónico"
         required
       />
       <input
         className="w-full px-3 py-2 border border-gray-800"
         type="password"
-        placeholder="Password"
+        placeholder="Contraseña"
         required
       />
       <div className="w-full flex justify-between text-sm mt-[-8px] ">
-        <p className="cursor-pointer">Forgot your password?</p>
+        <p className="cursor-pointer">¿Olvidaste tu contraseña?</p>
         {currentState === "Login" ? (
           <p
             onClick={() => setCurrentState("Sign Up")}
             className="cursor-pointer "
           >
-            Create Account
+            Crear Cuenta
           </p>
         ) : (
           <p
             onClick={() => setCurrentState("Login")}
             className="cursor-pointer "
           >
-            Login Here
+            Iniciar Sesión Aquí
           </p>
         )}
       </div>
